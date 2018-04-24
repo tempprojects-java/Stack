@@ -65,6 +65,10 @@ public class Stack {
 	public void denyType(String type) {
 		bList.add(type);
 	}
+	
+	public boolean isDenyType(Object obj) {
+		return bList.isSetType(obj.getClass().getSimpleName());
+	}
 
 	@Override
 	public String toString() {

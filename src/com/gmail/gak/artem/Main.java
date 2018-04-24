@@ -18,6 +18,8 @@ public class Main {
 		bList.add("String");
 		stack.setbList(bList);
 		
+		System.out.println(stack.isDenyType(new String()));
+		
 		try {
 			stack.push(new Integer(10));
 			stack.push(new Integer(20));
